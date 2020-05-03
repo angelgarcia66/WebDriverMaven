@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RunningTestParallel" verbose="1" parallel="tests" thread-count="3">
+
+		<test name="UploadTests">
+		<classes>
+			<class name="com.herokuapp.theinternet.uploadtests.UploadTests" />
+		</classes>
+	</test>
+	
+	<test name="PositiveLogInTest-WPr">
+		<parameter name="chromeProfile" value="ChromeProfile"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests" />
+		</classes>
+	</test>
+	
+	
+	<test name="NegativeLogInTest-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+
+</suite>
