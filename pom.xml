@@ -94,7 +94,7 @@
 				<configuration>
 					<suiteXmlFiles>
 					    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-					<!-- <suiteXmlFile>src/test/resources/TestSuites/testng.xml</suiteXmlFile> -->
+					 <!-- <suiteXmlFile>src/test/resources/TestSuites/testng.xml</suiteXmlFile> -->
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
